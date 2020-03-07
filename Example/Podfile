@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JYC_TestModule0_Example' do
+  pod 'JYC_TestModule0', :path => '../'
+
+  target 'JYC_TestModule0_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
